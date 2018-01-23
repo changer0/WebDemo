@@ -39,3 +39,8 @@
 2. cursor:default; 默认形状小箭头
 3. cursor:move; 移动时显示的样式
 4. cursor:text; 输入时显示光标的形状
+
+
+
+
+
