@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>判断质数</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var number = parseInt(prompt("数字:"));
+		var sum = 0;
+		if (number == 1) {
+			alert("既不是质数,也不是合数");
+		}else{
+			for(i = 1; i <= number; i++){
+				if (number % i == 0) {
+					sum++;
+				}
+			}
+			if (sum == 2) {
+				alert("是质数");
+			}else{
+				alert("是合数");
+			}
+		}
+		
+	</script>
+</body>
+</html>
