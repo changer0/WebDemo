@@ -100,7 +100,155 @@
 </body>
 ```
 
-### 选择器的权重问题
+### 交集选择器
+
+1. 交集选择器之间没有空格,直接用"."连接,可以连接多个
+2. 兼容到IE7,IE6不兼容
+3. 交集选择器一般是以标签开头的
+
+```
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>交集选择器</title>
+	<style type="text/css">
+		h3.special{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h3 class="special">我是标题</h3>
+	<h3>我是标题</h3>
+	<h3 class="special">我是标题</h3>
+	<p>我是段落</p>
+	<p class="special">我是段落</p>
+	<p>我是段落</p>
+	<p class="special">我是段落</p>
+	<p class="special">我是段落</p>
+	<p>我是段落</p>
+
+</body>
+```
+
+### 并集选择器
+
+1. 并集选择器之间是用“,”隔开的。
+
+```
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>并集选择器</title>
+	<style type="text/css">
+		h3,li{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h3>我是标题</h3>
+	<p>我是段落</p>
+	<ul>
+		<li>我是111</li>
+		<li>我是222</li>
+	</ul>
+</body>
+```
+
+### 通配符选择器
+
+1. 通配符“*”表示页面上所有的元素
+2. 页面上的标签越多，效率越低，所以页面上基本不出现这个选择器。
+
+### 儿子元素选择器
+
+1. 儿子选择器用“>”表示。
+2. 儿子和后代不同，只能选择儿子，不能选择其他的。
+3. 兼容到IE7,IE6不兼容
+
+```
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>儿子集选择器</title>
+	<style type="text/css">
+		div>p{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h3>我是标题</h3>
+		<!-- 能被选中 -->
+		<p>我是段落</p> 
+		<ul>
+			<!-- 不能被选中 -->
+			<li><p>djfgh，这是div的重孙子</p></li>
+		</ul>
+	</div>
+</body>
+```
+
+### 序选择器
+
+1. IE8开始兼容，6和7都不兼容。
+2. 如果要兼容6和7，就要添加类名
+
+```
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>序选择器</title>
+	<style type="text/css">
+		/*选择第一个*/
+		ul li:first-child{
+			color: red;
+		}
+		/*选择最后一个*/
+		ul li:last-child{
+			color: green;
+		}
+		ul li:
+	</style>
+</head>
+<body>
+	<div>
+		<ul>
+			<li>1111</li>
+			<li>2222</li>
+			<li>3333</li>
+			<li>4444</li>
+			<li>5555</li>
+		</ul>
+	</div>
+</body>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 浏览器
+
+windows xp操作系统安装的是IE6
+
+windows 7操作系统安装的是IE8
+
+windows 8操作系统安装的是IE9
+
+windows 10操作系统安装的是edge
+
+> 浏览器的兼容问题基本上就是出现在IE6和IE7身上,这两个是特别低级的浏览器
+
+
 
 
 
