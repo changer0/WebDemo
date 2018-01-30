@@ -1,6 +1,6 @@
 # css重点知识
 
-## 选择器
+## **1** 选择器
 
 > 一个标签可以被多个选择器选中，共同作用；
 
@@ -223,20 +223,7 @@
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 浏览器
+## **2** 浏览器
 
 windows xp操作系统安装的是IE6
 
@@ -254,7 +241,7 @@ windows 10操作系统安装的是edge
 
 
 
-## 字符属性
+## **2** 字符属性
 
 1. color:red; 字符颜色
 2. font-size:40px;字体大小
@@ -263,13 +250,10 @@ windows 10操作系统安装的是edge
 5. font-style：italic; 斜体
 6. font-style:normal; 正常
 7. text-decoration:underline; 下划线
-8. ​
-
-### 
 
 
 
-## 浮动
+## **3**  浮动
 
 1. 浮动的元素会脱标
 2. 目的：让多个块级元素浮动在同一行；
@@ -304,7 +288,7 @@ windows 10操作系统安装的是edge
     clear: both;
 }
 ```
-## 鼠标样式
+## **4**  鼠标样式
 1. cursor:pointer; 鼠标变成小手的形状
 2. cursor:default; 默认形状小箭头
 3. cursor:move; 移动时显示的样式
